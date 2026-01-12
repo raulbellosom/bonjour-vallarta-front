@@ -36,6 +36,17 @@ export default function Navbar() {
     setOpen(false);
   }, [location.pathname]);
 
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [open]);
+
   const platformUrl = useMemo(
     () =>
       import.meta.env.VITE_PLATFORM_URL ||
@@ -152,84 +163,94 @@ export default function Navbar() {
 
       <AnimatePresence>
         {open && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.25 }}
-            className="lg:hidden border-t border-black/5 dark:border-white/10 bg-white/80 dark:bg-black/40 backdrop-blur-xl"
-          >
-            <div className="container-pad py-4">
-              <div className="flex items-center justify-between gap-3 pb-3">
-                <div className="flex items-center gap-2 text-sm font-semibold">
-                  <Globe className="h-4 w-4" />
-                  {t("nav.language")}
-                </div>
-                <div className="flex items-center gap-2">
-                  <ThemeSwitch
-                    isDarkMode={theme === "dark"}
-                    onThemeChange={handleThemeChange}
-                    ariaLabel={t("nav.theme")}
-                  />
-                  <button
-                    type="button"
-                    onClick={() => changeLang("es")}
-                    className={cx(
-                      "px-3 py-2 rounded-xl text-xs font-semibold border border-black/10 dark:border-white/10",
-                      i18n.language === "es"
-                        ? "bg-black/5 dark:bg-white/10"
-                        : "bg-white dark:bg-white/5"
-                    )}
-                  >
-                    ES
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => changeLang("en")}
-                    className={cx(
-                      "px-3 py-2 rounded-xl text-xs font-semibold border border-black/10 dark:border-white/10",
-                      i18n.language === "en"
-                        ? "bg-black/5 dark:bg-white/10"
-                        : "bg-white dark:bg-white/5"
-                    )}
-                  >
-                    EN
-                  </button>
-                </div>
-              </div>
+          <>
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="fixed inset-0 top-16 bg-black/50 dark:bg-black/70 backdrop-blur-sm z-40 lg:hidden"
+              onClick={() => setOpen(false)}
+            />
 
-              <div className="grid gap-1">
-                {links.map((l) => (
-                  <NavLink
-                    key={l.to}
-                    to={l.to}
-                    className={({ isActive }) =>
-                      cx(
-                        "px-3 py-3 rounded-xl text-sm font-semibold transition border border-transparent",
-                        isActive
-                          ? "bg-black/5 dark:bg-white/10"
-                          : "hover:bg-black/5 dark:hover:bg-white/10"
-                      )
-                    }
-                  >
-                    {t(l.key)}
-                  </NavLink>
-                ))}
-              </div>
+            {/* Menu */}
+            <motion.div
+              initial={{ x: "100%", opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: "100%", opacity: 0 }}
+              transition={{ type: "spring", damping: 25, stiffness: 200 }}
+              className="fixed inset-y-16 right-0 w-full max-w-sm bg-white/95 dark:bg-neutral-950/95 backdrop-blur-2xl border-l border-black/5 dark:border-white/10 shadow-2xl z-50 lg:hidden"
+            >
+              <div className="h-full overflow-y-auto">
+                <div className="container-pad py-6">
+                  <div className="flex items-center justify-between gap-3 pb-4">
+                    <div className="flex items-center gap-2 text-sm font-semibold">
+                      <Globe className="h-4 w-4" />
+                      {t("nav.language")}
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <button
+                        type="button"
+                        onClick={() => changeLang("es")}
+                        className={cx(
+                          "px-3 py-2 rounded-xl text-xs font-semibold border border-black/10 dark:border-white/10 transition-all",
+                          i18n.language === "es"
+                            ? "bg-black dark:bg-white text-white dark:text-black border-transparent"
+                            : "bg-white dark:bg-white/5 hover:bg-black/5 dark:hover:bg-white/10"
+                        )}
+                      >
+                        ES
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => changeLang("en")}
+                        className={cx(
+                          "px-3 py-2 rounded-xl text-xs font-semibold border border-black/10 dark:border-white/10 transition-all",
+                          i18n.language === "en"
+                            ? "bg-black dark:bg-white text-white dark:text-black border-transparent"
+                            : "bg-white dark:bg-white/5 hover:bg-black/5 dark:hover:bg-white/10"
+                        )}
+                      >
+                        EN
+                      </button>
+                    </div>
+                  </div>
 
-              <div className="pt-4">
-                <a
-                  href={platformUrl}
-                  className="inline-flex w-full items-center justify-center gap-2 rounded-2xl px-4 py-3 text-sm font-semibold gradient-brand text-white shadow-soft"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {t("common.cta.learnOnline")}
-                  <ArrowUpRight className="h-4 w-4" />
-                </a>
+                  <div className="grid gap-1">
+                    {links.map((l) => (
+                      <NavLink
+                        key={l.to}
+                        to={l.to}
+                        className={({ isActive }) =>
+                          cx(
+                            "px-4 py-3 rounded-xl text-sm font-semibold transition border border-transparent",
+                            isActive
+                              ? "bg-gradient-to-r from-purple-500/10 to-blue-500/10 border-purple-500/20 dark:border-purple-500/30"
+                              : "hover:bg-black/5 dark:hover:bg-white/10"
+                          )
+                        }
+                      >
+                        {t(l.key)}
+                      </NavLink>
+                    ))}
+                  </div>
+
+                  <div className="pt-6">
+                    <a
+                      href={platformUrl}
+                      className="inline-flex w-full items-center justify-center gap-2 rounded-2xl px-4 py-3 text-sm font-semibold gradient-brand text-white shadow-soft"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {t("common.cta.learnOnline")}
+                      <ArrowUpRight className="h-4 w-4" />
+                    </a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
     </header>

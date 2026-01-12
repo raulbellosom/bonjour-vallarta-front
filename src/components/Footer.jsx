@@ -2,11 +2,21 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Instagram, Facebook, Youtube, Mail, Heart } from "lucide-react";
+import { setLang } from "../lib/theme.js";
+
+function cx(...parts) {
+  return parts.filter(Boolean).join(" ");
+}
 
 export default function Footer() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const year = new Date().getFullYear();
   const [showTooltip, setShowTooltip] = useState(false);
+
+  function changeLang(next) {
+    i18n.changeLanguage(next);
+    setLang(next);
+  }
 
   return (
     <footer className="relative border-t border-white/5 bg-gradient-to-b from-neutral-950 to-black text-white overflow-hidden">
@@ -94,16 +104,40 @@ export default function Footer() {
                 <Youtube className="h-5 w-5 group-hover:scale-110 transition-transform" />
               </a>
             </div>
-            <div className="flex gap-2 text-xs text-white/50">
-              <span className="px-2 py-1 rounded bg-white/5 border border-white/10">
-                FR
-              </span>
-              <span className="px-2 py-1 rounded bg-white/5 border border-white/10">
-                EN
-              </span>
-              <span className="px-2 py-1 rounded bg-white/5 border border-white/10">
-                ES
-              </span>
+            <div className="flex flex-col gap-2">
+              <p className="text-xs text-white/40">{t("nav.language")}</p>
+              <div className="flex gap-2 text-xs">
+                <button
+                  type="button"
+                  onClick={() => changeLang("es")}
+                  className={cx(
+                    "px-3 py-1.5 rounded-lg border transition-all",
+                    i18n.language === "es"
+                      ? "bg-white text-black border-white font-semibold"
+                      : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10 hover:text-white"
+                  )}
+                >
+                  ES
+                </button>
+                <button
+                  type="button"
+                  onClick={() => changeLang("en")}
+                  className={cx(
+                    "px-3 py-1.5 rounded-lg border transition-all",
+                    i18n.language === "en"
+                      ? "bg-white text-black border-white font-semibold"
+                      : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10 hover:text-white"
+                  )}
+                >
+                  EN
+                </button>
+                <span className="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-white/40 cursor-not-allowed relative group">
+                  FR
+                  <span className="absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 bg-black text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                    {t("common.badges.comingSoon")}
+                  </span>
+                </span>
+              </div>
             </div>
           </div>
 
