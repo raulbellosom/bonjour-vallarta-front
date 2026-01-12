@@ -35,13 +35,20 @@ export default function Footer() {
                 className="h-10 w-10 object-contain"
               />
             </div>
-            <h3 className="text-lg font-bold mb-2">{t("common.brand")}</h3>
+            <div className="mb-2">
+              <h3 className="text-lg font-bold text-[#8b3fc9] leading-tight">
+                {t("common.brand")}
+              </h3>
+              <p className="text-sm font-medium text-[#e91e63]">
+                {t("common.slogan")}
+              </p>
+            </div>
             <p className="text-sm text-white/60 leading-relaxed mb-4">
               {t("common.location")}
             </p>
             <a
               href="mailto:hello@bonjourvallarta.com.mx"
-              className="inline-flex items-center gap-2 text-sm text-white/70 hover:text-purple-400 transition-colors group"
+              className="inline-flex items-center gap-2 text-sm text-white/70 hover:text-[#8b3fc9] transition-colors group"
             >
               <Mail className="h-4 w-4 group-hover:scale-110 transition-transform" />
               <span>hello@bonjourvallarta.com.mx</span>
@@ -163,19 +170,21 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
-          <p className="text-xs text-white/40">
+        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col items-center justify-between gap-6">
+          <p className="text-xs text-white/40 text-center">
             © {year} {t("common.brand")}. {t("footer.rights")}
           </p>
 
           {/* Racoon Devs Credit with Tooltip */}
-          <div className="relative">
+          <div
+            className="relative"
+            onMouseEnter={() => setShowTooltip(true)}
+            onMouseLeave={() => setShowTooltip(false)}
+          >
             <a
               href="https://racoondevs.com"
               target="_blank"
               rel="noreferrer"
-              onMouseEnter={() => setShowTooltip(true)}
-              onMouseLeave={() => setShowTooltip(false)}
               className="inline-flex items-center gap-2 text-xs text-white/50 hover:text-white transition-colors group"
             >
               <span>{t("footer.madeWith")}</span>
@@ -188,9 +197,9 @@ export default function Footer() {
 
             {/* Tooltip */}
             {showTooltip && (
-              <div className="absolute bottom-full right-0 mb-3 w-72 p-4 rounded-xl bg-gradient-to-br from-neutral-900 to-black border border-white/20 shadow-2xl backdrop-blur-xl animate-[fadeIn_0.2s_ease-out]">
+              <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-72 p-4 rounded-xl bg-gradient-to-br from-neutral-900 to-black border border-white/20 shadow-2xl backdrop-blur-xl animate-[fadeIn_0.2s_ease-out] z-10">
                 <div className="flex items-start gap-3 mb-3">
-                  <div className="p-2 rounded-lg bg-gradient-to-br from-purple-500/20 to-blue-500/20 border border-white/10">
+                  <div className="p-2 rounded-lg bg-gradient-to-br from-purple-500/20 to-blue-500/20 border border-white/10 flex-shrink-0">
                     <img
                       src="/rd_icon.webp"
                       alt={t("footer.racoonDevs.name")}

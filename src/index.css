@@ -3,8 +3,8 @@
 
 @layer base {
   :root {
-    --brand: 316 85% 48%;
-    --brand2: 266 90% 55%;
+    --brand: 276 95% 35%; /* #5806a7 - Morado corporativo */
+    --brand2: 335 94% 37%; /* #b6084f - Rojo/tinto corporativo */
     --bg: 0 0% 100%;
     --fg: 240 10% 4%;
     --muted: 240 5% 96%;
