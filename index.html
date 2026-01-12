@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bonjour Vallarta — language school in Puerto Vallarta. Learn with confidence, at your pace." />
+    <link rel="icon" type="image/png" href="/icon.png" />
+    <title>Bonjour Vallarta</title>
+
+    <!-- Prevent FOUC for theme -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          var isDark = t === 'dark' || (!t && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          if (isDark) document.documentElement.classList.add('dark');
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

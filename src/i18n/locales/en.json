@@ -1,0 +1,287 @@
+{
+  "common": {
+    "brand": "Bonjour Vallarta",
+    "location": "Puerto Vallarta, Mexico",
+    "cta": {
+      "viewCourses": "View courses",
+      "learnOnline": "Online platform",
+      "contact": "Contact us",
+      "getStarted": "Get started"
+    },
+    "badges": {
+      "new": "New",
+      "comingSoon": "Coming soon"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "courses": "Courses",
+    "onlinePlatform": "Online platform",
+    "certifications": "Certifications",
+    "blog": "Blog",
+    "contact": "Contact",
+    "language": "Language",
+    "theme": "Theme",
+    "openPlatform": "Open platform"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "subtitle": "The page you are looking for doesn’t exist or was moved.",
+    "backHome": "Back to home"
+  },
+  "home": {
+    "hero": {
+      "kicker": "Language school in Puerto Vallarta",
+      "title1": "Learn languages with",
+      "title2": "confidence,",
+      "title3": "at your pace",
+      "subtitle": "Small groups, friendly teachers, and a modern experience — now with an online self‑learning platform.",
+      "primary": "View courses",
+      "secondary": "Online platform",
+      "stats": {
+        "years": "Years of experience",
+        "students": "Students",
+        "satisfaction": "Satisfaction rate"
+      }
+    },
+    "human": {
+      "kicker": "Who we are",
+      "title": "A school with a human approach",
+      "subtitle": "Learning a language is more than memorizing words — it’s opening doors to new cultures, opportunities, and connections.",
+      "cards": [
+        {
+          "title": "Certified teachers",
+          "desc": "Trained instructors and international certification options."
+        },
+        {
+          "title": "Proven methodology",
+          "desc": "Clear learning path with measurable progress."
+        },
+        {
+          "title": "Active community",
+          "desc": "Practice with a supportive group that keeps you motivated."
+        }
+      ]
+    },
+    "offer": {
+      "kicker": "What we offer",
+      "title": "Find the perfect course",
+      "titleAccent": "for you",
+      "subtitle": "Flexible options designed to fit your lifestyle and goals.",
+      "items": [
+        {
+          "title": "In‑person courses",
+          "desc": "Learn with guidance in our classrooms in Puerto Vallarta."
+        },
+        {
+          "title": "Live online classes",
+          "desc": "Real-time sessions from anywhere, same quality and attention."
+        },
+        {
+          "title": "Self‑learning platform",
+          "desc": "Short lessons, practice, and progress tracking — coming very soon."
+        },
+        {
+          "title": "Courses for companies",
+          "desc": "Customized programs for teams and business communication."
+        }
+      ]
+    },
+    "platform": {
+      "kicker": "New",
+      "title": "Your language academy in your pocket",
+      "subtitle": "Study when and where you want. Our platform is being built to support your goals.",
+      "bullets": [
+        "HD recorded lessons",
+        "Interactive exercises",
+        "24/7 access",
+        "Progress tracking",
+        "Community support"
+      ],
+      "cta": "Explore platform"
+    },
+    "certs": {
+      "kicker": "Official certifications",
+      "title": "Get ready for your official exams",
+      "subtitle": "We help you prepare for internationally recognized tests that validate your language level.",
+      "leftTitle": "French certifications",
+      "rightTitle": "English certifications",
+      "leftItems": ["DELF A1–B2", "DALF C1–C2", "TCF"],
+      "rightItems": ["Cambridge FCE", "Cambridge CAE", "TOEFL"]
+    },
+    "testimonials": {
+      "kicker": "Testimonials",
+      "title": "What our students say",
+      "items": [
+        {
+          "name": "María González",
+          "role": "Student",
+          "quote": "I gained confidence speaking in class. The teachers are patient and make it fun."
+        },
+        {
+          "name": "Carlos Ramírez",
+          "role": "Professional",
+          "quote": "The methodology is clear and practical. I improved fast for my job interviews."
+        },
+        {
+          "name": "Ana Martínez",
+          "role": "University student",
+          "quote": "I love the online materials and the community. It keeps me consistent."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to start your language journey?",
+      "subtitle": "Tell us your goals and we’ll suggest the best path for you.",
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "message": "How can we help?",
+        "send": "Send message"
+      },
+      "meta": ["Response within 24–48h", "No spam", "Bilingual support"]
+    }
+  },
+  "courses": {
+    "title": "Courses",
+    "titleAccent": "for every goal",
+    "subtitle": "Choose the format that fits you best. We’ll help you start at the right level.",
+    "cards": {
+      "inPerson": {
+        "title": "In‑person courses",
+        "desc": "Small groups, friendly atmosphere, and clear progress.",
+        "cta": "Ask for schedules"
+      },
+      "liveOnline": {
+        "title": "Live online",
+        "desc": "Real-time classes from anywhere — same attention, flexible hours.",
+        "cta": "Book a call"
+      },
+      "selfLearning": {
+        "title": "Self‑learning platform",
+        "desc": "Short lessons + exercises + progress tracking. Coming very soon.",
+        "cta": "See platform"
+      },
+      "business": {
+        "title": "For companies",
+        "desc": "Custom programs for teams and business communication.",
+        "cta": "Get a proposal"
+      }
+    },
+    "platformBox": {
+      "title": "Want to combine classes + self‑learning?",
+      "desc": "Our platform will pair perfectly with group sessions for faster progress."
+    }
+  },
+  "online": {
+    "kicker": "Self‑learning",
+    "title": "Your next‑gen",
+    "titleAccent": "online platform",
+    "subtitle": "A modern, mobile‑friendly way to practice every day with short lessons and clear progress.",
+    "features": {
+      "lessons": {
+        "title": "Bite‑sized lessons",
+        "desc": "Short sessions you can complete during breaks or commutes."
+      },
+      "pace": {
+        "title": "Your pace, your schedule",
+        "desc": "Study whenever you want and keep your streak alive."
+      },
+      "progress": {
+        "title": "Track progress",
+        "desc": "Clear milestones to stay motivated and measure improvement."
+      }
+    },
+    "ctaBox": {
+      "title": "Early access",
+      "desc": "We’ll launch at learn.bonjourvallarta.com.mx. For now, explore the demo link and join our live online courses."
+    }
+  },
+  "certifications": {
+    "kicker": "Certifications",
+    "title": "Prepare for",
+    "titleAccent": "official exams",
+    "subtitle": "Structured preparation with practice tests and teacher feedback.",
+    "fr": {
+      "title": "French",
+      "subtitle": "DELF / DALF / TCF",
+      "items": ["DELF A1–B2", "DALF C1–C2", "TCF"]
+    },
+    "en": {
+      "title": "English",
+      "subtitle": "Cambridge / TOEFL",
+      "items": ["Cambridge FCE", "Cambridge CAE", "TOEFL"]
+    },
+    "cta": {
+      "title": "Need a prep plan?",
+      "desc": "Tell us your exam and your date — we’ll suggest a weekly roadmap."
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "titleAccent": "& resources",
+    "subtitle": "Tips, resources, and stories about language learning.",
+    "readMore": "Read article",
+    "back": "Back to blog",
+    "loading": "Loading posts…",
+    "notFound": {
+      "title": "Post not found",
+      "desc": "This article may have been removed or is not available."
+    }
+  },
+  "contact": {
+    "title": "Let’s talk",
+    "titleAccent": "about your goals",
+    "subtitle": "Tell us what you want to learn and we’ll recommend the best plan.",
+    "cards": {
+      "location": "Location",
+      "phone": "Phone",
+      "email": "Email"
+    },
+    "form": {
+      "title": "Send a message",
+      "subtitle": "We reply within 24–48h on business days.",
+      "name": "Your name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send"
+    },
+    "side": {
+      "title": "What we can help with",
+      "desc": "From placement to exam prep — we’ll guide you step by step.",
+      "bullets": [
+        "Level placement",
+        "Schedules and pricing",
+        "Online platform updates",
+        "Certification prep"
+      ]
+    }
+  },
+  "footer": {
+    "quickLinks": "Quick links",
+    "follow": "Follow",
+    "rights": "All rights reserved.",
+    "madeWith": "Made with",
+    "by": "by",
+    "languages": {
+      "french": {
+        "title": "Learn French",
+        "desc": "Discover the beauty of the French language with innovative methods and international certifications."
+      },
+      "english": {
+        "title": "Learn English",
+        "desc": "Master English with proven techniques and prepare for official certifications."
+      }
+    },
+    "racoonDevs": {
+      "name": "Racoon Devs",
+      "tagline": "We sculpt digital experiences that transform the way people interact with technology.",
+      "features": {
+        "architecture": "Scalable architecture",
+        "design": "Design that connects",
+        "solutions": "Complete solutions"
+      }
+    }
+  }
+}

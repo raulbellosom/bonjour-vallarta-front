@@ -1,0 +1,283 @@
+{
+  "common": {
+    "brand": "Bonjour Vallarta",
+    "location": "Puerto Vallarta, México",
+    "cta": {
+      "viewCourses": "Ver cursos",
+      "learnOnline": "Plataforma en línea",
+      "contact": "Contáctanos",
+      "getStarted": "Empezar"
+    },
+    "badges": {
+      "new": "Nuevo",
+      "comingSoon": "Muy pronto"
+    }
+  },
+  "nav": {
+    "home": "Inicio",
+    "courses": "Cursos",
+    "onlinePlatform": "Plataforma en línea",
+    "certifications": "Certificaciones",
+    "blog": "Blog",
+    "contact": "Contacto",
+    "language": "Idioma",
+    "theme": "Tema",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "openPlatform": "Abrir plataforma"
+  },
+  "home": {
+    "hero": {
+      "kicker": "Escuela de idiomas en Puerto Vallarta",
+      "title1": "Aprende idiomas con",
+      "title2": "confianza,",
+      "title3": "a tu ritmo",
+      "subtitle": "Grupos pequeños, profesores cercanos y una experiencia moderna — ahora con una plataforma de autoaprendizaje.",
+      "primary": "Ver cursos",
+      "secondary": "Plataforma en línea",
+      "stats": {
+        "years": "Años de experiencia",
+        "students": "Estudiantes",
+        "satisfaction": "Satisfacción"
+      }
+    },
+    "human": {
+      "kicker": "Quiénes somos",
+      "title": "Una escuela con enfoque humano",
+      "subtitle": "Aprender un idioma es más que memorizar palabras: es abrir puertas a nuevas culturas, oportunidades y conexiones.",
+      "cards": [
+        {
+          "title": "Profesores certificados",
+          "desc": "Instructores capacitados y opciones de certificación internacional."
+        },
+        {
+          "title": "Metodología probada",
+          "desc": "Ruta clara con progreso medible en cada nivel."
+        },
+        {
+          "title": "Comunidad activa",
+          "desc": "Practica en un ambiente amable que te mantiene motivado."
+        }
+      ]
+    },
+    "offer": {
+      "kicker": "Qué ofrecemos",
+      "title": "Encuentra el curso perfecto para ti",
+      "subtitle": "Opciones flexibles para adaptarse a tu estilo de vida y objetivos.",
+      "items": [
+        {
+          "title": "Cursos presenciales",
+          "desc": "Aprende con guía en nuestras aulas en Puerto Vallarta."
+        },
+        {
+          "title": "Cursos en línea en vivo",
+          "desc": "Sesiones en tiempo real desde donde estés, con la misma calidad."
+        },
+        {
+          "title": "Plataforma de autoaprendizaje",
+          "desc": "Lecciones cortas, práctica y seguimiento — disponible muy pronto."
+        },
+        {
+          "title": "Cursos para empresas",
+          "desc": "Programas personalizados para equipos y comunicación de negocios."
+        }
+      ]
+    },
+    "platform": {
+      "kicker": "Nuevo",
+      "title": "Tu academia de idiomas en tu bolsillo",
+      "subtitle": "Estudia cuando y donde quieras. Estamos construyendo una plataforma hecha para tus metas.",
+      "bullets": [
+        "Clases grabadas en HD",
+        "Ejercicios interactivos",
+        "Acceso 24/7",
+        "Seguimiento de progreso",
+        "Comunidad y soporte"
+      ],
+      "cta": "Explorar plataforma"
+    },
+    "certs": {
+      "kicker": "Certificaciones oficiales",
+      "title": "Prepárate para tus exámenes oficiales",
+      "subtitle": "Te ayudamos a prepararte para pruebas internacionales que validan tu nivel.",
+      "leftTitle": "Certificaciones de francés",
+      "rightTitle": "Certificaciones de inglés",
+      "leftItems": ["DELF A1–B2", "DALF C1–C2", "TCF"],
+      "rightItems": ["Cambridge FCE", "Cambridge CAE", "TOEFL"]
+    },
+    "testimonials": {
+      "kicker": "Testimonios",
+      "title": "Lo que dicen nuestros estudiantes",
+      "items": [
+        {
+          "name": "María González",
+          "role": "Estudiante",
+          "quote": "Gané confianza al hablar. Los profes son pacientes y lo hacen divertido."
+        },
+        {
+          "name": "Carlos Ramírez",
+          "role": "Profesional",
+          "quote": "La metodología es clara y práctica. Mejoré rápido para entrevistas."
+        },
+        {
+          "name": "Ana Martínez",
+          "role": "Universitaria",
+          "quote": "Me encantan los materiales y la comunidad. Me ayuda a ser constante."
+        }
+      ]
+    },
+    "cta": {
+      "title": "¿Listo para comenzar tu aventura lingüística?",
+      "subtitle": "Cuéntanos tus metas y te sugerimos el mejor camino.",
+      "form": {
+        "name": "Nombre",
+        "email": "Correo",
+        "message": "¿Cómo podemos ayudarte?",
+        "send": "Enviar mensaje"
+      },
+      "meta": ["Respuesta en 24–48h", "Sin spam", "Atención bilingüe"]
+    }
+  },
+  "courses": {
+    "title": "Cursos",
+    "titleAccent": "para cada ritmo",
+    "subtitle": "Elige el formato que mejor te quede. Te ayudamos a iniciar en el nivel correcto.",
+    "cards": {
+      "inPerson": {
+        "title": "Presencial",
+        "desc": "Grupos pequeños y práctica constante en Puerto Vallarta.",
+        "cta": "Agendar info"
+      },
+      "liveOnline": {
+        "title": "En línea en vivo",
+        "desc": "Clases reales, interacción total y acompañamiento.",
+        "cta": "Consultar horarios"
+      },
+      "selfLearning": {
+        "title": "Autoaprendizaje",
+        "desc": "Lecciones, ejercicios y progreso desde tu celular o laptop.",
+        "cta": "Ver plataforma"
+      },
+      "business": {
+        "title": "Empresas",
+        "desc": "Programas adaptados a objetivos y comunicación laboral.",
+        "cta": "Cotizar"
+      }
+    },
+    "platformBox": {
+      "title": "Plataforma en línea",
+      "desc": "Pronto: lecciones cortas, práctica guiada y seguimiento. Mientras tanto, abre la plataforma (demo) o contáctanos."
+    }
+  },
+  "online": {
+    "kicker": "Nuevo",
+    "title": "Plataforma",
+    "titleAccent": "de autoaprendizaje",
+    "subtitle": "Una experiencia moderna para estudiar con estructura, práctica y progreso.",
+    "features": {
+      "lessons": {
+        "title": "Lecciones claras",
+        "desc": "Contenido corto y accionable para avanzar sin saturarte."
+      },
+      "pace": {
+        "title": "A tu ritmo",
+        "desc": "Aprende cuando puedas: mañana, tarde o noche."
+      },
+      "progress": {
+        "title": "Tu progreso",
+        "desc": "Visualiza avances, repasa temas y mantén consistencia."
+      }
+    },
+    "ctaBox": {
+      "title": "¿Quieres acceso cuando esté lista?",
+      "desc": "Por ahora este botón abre la URL definida en VITE_PLATFORM_URL (placeholder)."
+    }
+  },
+  "certifications": {
+    "kicker": "Exámenes oficiales",
+    "title": "Prepárate",
+    "titleAccent": "para certificarte",
+    "subtitle": "Preparación estructurada, simulacros y retroalimentación para llegar con confianza.",
+    "fr": {
+      "title": "Francés",
+      "subtitle": "Rutas por nivel + práctica de formato",
+      "items": ["DELF A1–B2", "DALF C1–C2", "TCF"]
+    },
+    "en": {
+      "title": "Inglés",
+      "subtitle": "Estrategia, práctica y timings",
+      "items": ["Cambridge FCE", "Cambridge CAE", "TOEFL"]
+    },
+    "cta": {
+      "title": "Te decimos por dónde empezar",
+      "desc": "Contáctanos y te recomendamos un plan según tu meta y fecha de examen."
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "titleAccent": "de aprendizaje",
+    "subtitle": "Tips, recursos e ideas para aprender idiomas con constancia.",
+    "readMore": "Leer artículo",
+    "back": "Volver al blog",
+    "loading": "Cargando artículos…",
+    "notFound": {
+      "title": "Artículo no encontrado",
+      "desc": "Puede que el link esté mal o el contenido aún no esté disponible."
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "titleAccent": "rápido",
+    "subtitle": "Dinos qué quieres aprender y te respondemos con horarios y opciones.",
+    "cards": {
+      "location": "Ubicación",
+      "phone": "Teléfono",
+      "email": "Correo"
+    },
+    "form": {
+      "title": "Envíanos un mensaje",
+      "subtitle": "Este formulario es demo por ahora. Luego lo conectaremos a Appwrite Functions.",
+      "name": "Nombre",
+      "email": "Correo",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "send": "Enviar"
+    },
+    "side": {
+      "title": "¿Qué pasa después?",
+      "desc": "Te damos una recomendación de nivel y formato según tu objetivo.",
+      "bullets": ["Evaluación rápida", "Horario sugerido", "Plan de estudio"]
+    }
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "subtitle": "La ruta que abriste no existe en este sitio.",
+    "backHome": "Ir a inicio"
+  },
+  "footer": {
+    "quickLinks": "Enlaces",
+    "follow": "Síguenos",
+    "rights": "Todos los derechos reservados.",
+    "madeWith": "Hecho con",
+    "by": "por",
+    "languages": {
+      "french": {
+        "title": "Aprende Francés",
+        "desc": "Descubre la belleza del idioma francés con métodos innovadores y certificaciones internacionales."
+      },
+      "english": {
+        "title": "Aprende Inglés",
+        "desc": "Domina el inglés con técnicas comprobadas y prepárate para certificaciones oficiales."
+      }
+    },
+    "racoonDevs": {
+      "name": "Racoon Devs",
+      "tagline": "Esculpimos experiencias digitales que transforman la manera en que las personas interactúan con la tecnología.",
+      "features": {
+        "architecture": "Arquitectura escalable",
+        "design": "Diseño que conecta",
+        "solutions": "Soluciones integrales"
+      }
+    }
+  }
+}
